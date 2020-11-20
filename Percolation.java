@@ -33,8 +33,8 @@ public class Percolation {
     }
 
     private void isInputValid(int col, int row) {
-        if (row < 0 || row > n) throw new IllegalArgumentException("row index out of bounds");
-        if (col < 0 || col > n) throw new IllegalArgumentException("col index out of bounds");
+        if (row < 1 || row > n) throw new IllegalArgumentException("row index out of bounds");
+        if (col < 1 || col > n) throw new IllegalArgumentException("col index out of bounds");
     }
 
     // translates from 2D grid index to 1D UF data structure index
