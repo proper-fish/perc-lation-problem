@@ -8,9 +8,9 @@ import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 public class Percolation {
 
-    private int n;
+    private final int n;
     private boolean[][] grid;
-    private WeightedQuickUnionUF ufArray;
+    private final WeightedQuickUnionUF ufArray;
     private int openSites = 0;
 
     // creates n-by-n grid, with all sites initially blocked
@@ -107,7 +107,7 @@ public class Percolation {
 
     // test client
     public static void main(String[] args) {
-        // Percolation percolation = new Percolation(5);
-        // percolation.visualize(percolation);
+        Percolation percolation = new Percolation(5);
+        percolation.visualize(percolation);
     }
 }
